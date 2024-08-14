@@ -24,25 +24,25 @@ const Navigation = () => {
           <div className="col-sm-9 navPart2 d-flex align-items-center">
             <ul className="list list-inline ms-auto">
               <li className="list-inline-item">
-                <Link to="/"><MdHome /> &nbsp; Home</Link>
+                <Link to="/"><Button><MdHome /> &nbsp; Home</Button></Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">Fashion</Link>
+                <Link to="/"><Button>Fashion</Button></Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">Electronics</Link>
+                <Link to="/"><Button>Electronics</Button></Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">Bakery</Link>
+                <Link to="/"><Button>Bakery</Button></Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">Grocery</Link>
+                <Link to="/"><Button>Grocery</Button></Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">Blog</Link>
+                <Link to="/"><Button>Blog</Button></Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">Contact Us</Link>
+                <Link to="/"><Button>Contact Us</Button></Link>
               </li>
             </ul>
           </div>

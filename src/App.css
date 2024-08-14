@@ -64,7 +64,7 @@ body {
   opacity: 0.7;
 }
 
-header .headersearch {
+.headersearch {
   width: 60%;
   height: 50px;
   background: #f3f4f7;
@@ -74,7 +74,7 @@ header .headersearch {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-header .headersearch input {
+.headersearch input {
   background: transparent !important;
   outline: none !important;
   font-size: 15px;
@@ -85,7 +85,7 @@ header .headersearch input {
   padding: 0px 20px !important;
 }
 
-header .headersearch button {
+.headersearch button {
   position: absolute;
   top: 2px;
   right: 15px;
@@ -97,7 +97,7 @@ header .headersearch button {
   color: #000;
 }
 
-header .headersearch button svg {
+.headersearch button svg {
   font-size: 25px;
 }
 
@@ -132,23 +132,94 @@ header .part3 .circle svg {
   height: 20px;
 }
 
+/* IMPORTANT GO THROUGH THIS*/
 
-nav .allCatTab{background: #8b3797; padding: 10px 15px !important; border-radius: 30px !important;}
-nav .allCatTab *{color: #fff;}
-nav .allCatTab:hover{background: #8b3797;}
-nav .allCatTab .text{font-weight: 600;}
+::-webkit-scrollbar{width: 8px !important; height: 8px !important;} /* its like scroll bar gets vanished.*/
+::-webkit-scrollbar-thumb{background: #CCC !important;}
+::-webkit-scrollbar-track{background: transparent !important;}
 
-nav .allCatTab .icon1 svg{font-size: 22px !important;}
-nav .allCatTab .icon2 svg{font-size: 20px !important;}
+.locationModal .MuiPaper-elevation {
+  padding: 25px;
+  position: relative;
+}
 
-nav .navPart2 ul{margin-bottom: 0px;}
-nav .navPart2 ul li a{font-size: 15px; font-weight: 600; text-decoration: none;color: rgba(0, 0, 0, 0.8); text-transform: uppercase;
-display: flex; align-items: center; padding: 10px 20px; transition: all 0.3s ease-in-out; border-radius: 25px;}
+.locationModal .countryList{
+  margin-bottom: 0px;
+  max-height: 300px;
+  overflow-y: scroll;
+}
 
-nav .navPart2 ul li a:hover{
+.locationModal .close_{
+position: absolute;
+color: #000;
+font-size: 20px;
+top: 10px;
+right: 10px;
+min-width: 40px !important;
+width: 40px !important;
+height: 40px !important;
+border-radius: 50% !important;
+}
+
+.locationModal .countryList li{
+  width: 100%;
+  list-style: none;
+}
+.locationModal .countryList li button{
+  width: 100%;
+  text-transform: capitalize !important;
+  color: #8b3797 !important;
+  justify-content: flex-start !important;
+  padding: 15px 20px !important;
+}
+
+nav .allCatTab {
+  background: #8b3797;
+  padding: 10px 15px !important;
+  border-radius: 30px !important;
+}
+nav .allCatTab * {
+  color: #fff;
+}
+nav .allCatTab:hover {
+  background: #8b3797;
+}
+nav .allCatTab .text {
+  font-weight: 600;
+}
+
+nav .allCatTab .icon1 svg {
+  font-size: 22px !important;
+}
+nav .allCatTab .icon2 svg {
+  font-size: 20px !important;
+}
+
+nav .navPart2 ul {
+  margin-bottom: 0px;
+}
+nav .navPart2 ul li a{
+text-decoration: none;
+}
+
+
+nav .navPart2 ul li a button{
+  font-size: 15px !important;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 25px;
+}
+
+nav .navPart2 ul li a button:hover {
   background: #8b3797;
   color: #fff;
 }
-nav .navPart2 ul li a svg{
-font-size: 18px;
+nav .navPart2 ul li a svg {
+  font-size: 18px;
 }
