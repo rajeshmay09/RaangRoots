@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 import { FaAngleDown } from "react-icons/fa6";
 import Button from "@mui/material/Button";
 //import DialogTitle from '@mui/material/DialogTitle';
@@ -6,14 +6,14 @@ import Dialog from "@mui/material/Dialog";
 import { IoSearch } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
-import Slide from '@mui/material/Slide';
-import { TransitionProps } from '@mui/material/transitions';
+import Slide from "@mui/material/Slide";
+import { TransitionProps } from "@mui/material/transitions";
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
-    children: React.ReactElement<any, any>;
+    children: React.ReactElement<any, any>,
   },
-  ref: React.Ref<unknown>,
+  ref: React.Ref<unknown>
 ) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
@@ -96,7 +96,7 @@ const CountryDropdown = () => {
             <Button onClick={() => setisOpenModal(false)}>bengaluru</Button>
           </li>
           <li>
-            <Button> onClick={() => setisOpenModal(false)}bengaluru</Button>
+            <Button onClick={() => setisOpenModal(false)}>bengaluru</Button>
           </li>
         </ul>
       </Dialog>

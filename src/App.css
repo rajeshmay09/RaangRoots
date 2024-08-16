@@ -13,6 +13,9 @@ body {
 .bg-purple {
   background: #8b3797;
 }
+.headerWrapper {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
 
 .headerWrapper .top-strip {
   padding: 8px 0px;
@@ -134,44 +137,95 @@ header .part3 .circle svg {
 
 /* IMPORTANT GO THROUGH THIS*/
 
-::-webkit-scrollbar{width: 8px !important; height: 8px !important;} /* its like scroll bar gets vanished.*/
-::-webkit-scrollbar-thumb{background: #CCC !important;}
-::-webkit-scrollbar-track{background: transparent !important;}
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+} /* its like scroll bar gets vanished.*/
+::-webkit-scrollbar-thumb {
+  background: #ccc !important;
+}
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
 
 .locationModal .MuiPaper-elevation {
   padding: 25px;
   position: relative;
 }
 
-.locationModal .countryList{
+.locationModal .countryList {
   margin-bottom: 0px;
   max-height: 300px;
   overflow-y: scroll;
 }
 
-.locationModal .close_{
-position: absolute;
-color: #000;
-font-size: 20px;
-top: 10px;
-right: 10px;
-min-width: 40px !important;
-width: 40px !important;
-height: 40px !important;
-border-radius: 50% !important;
+.locationModal .close_ {
+  position: absolute;
+  color: #000;
+  font-size: 20px;
+  top: 10px;
+  right: 10px;
+  min-width: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
 }
 
-.locationModal .countryList li{
+.locationModal .countryList li {
   width: 100%;
   list-style: none;
 }
-.locationModal .countryList li button{
+.locationModal .countryList li button {
   width: 100%;
   text-transform: capitalize !important;
   color: #8b3797 !important;
   justify-content: flex-start !important;
   padding: 15px 20px !important;
 }
+
+
+
+nav .navPart1 .catWrapper {
+  position: relative;
+}
+nav .navPart1 .catWrapper .sidebarNav {
+  width: 100%;
+  height: 0px;
+  background: #e1d7d7;
+  position: absolute;
+  top: 160%;
+  left: 0px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 15px 0px;
+  opacity: 0;
+  transition: all 0.2 ease-in-out;
+  visibility: hidden;
+  z-index: 100;
+}
+nav .navPart1 .catWrapper .sidebarNav.open{
+height: auto;
+opacity: 1;
+visibility: inherit;
+}
+
+nav .navPart1 .catWrapper .sidebarNav ul li {
+  width: 100%;
+  list-style: none;
+
+}
+nav .navPart1 .catWrapper .sidebarNav ul li button {
+  color: #050303;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+nav .navPart1 .catWrapper .sidebarNav ul li button:hover {
+  background: transparent !important;
+}  
+nav .navPart1 .catWrapper .sidebarNav ul li{position: relative;}
+nav .navPart1 .catWrapper .sidebarNav ul li .submenu{position: absolute; top: 0px;}
+
+
 
 nav .allCatTab {
   background: #8b3797;
@@ -198,12 +252,11 @@ nav .allCatTab .icon2 svg {
 nav .navPart2 ul {
   margin-bottom: 0px;
 }
-nav .navPart2 ul li a{
-text-decoration: none;
+nav .navPart2 ul li a {
+  text-decoration: none;
 }
 
-
-nav .navPart2 ul li a button{
+nav .navPart2 ul li a button {
   font-size: 15px !important;
   font-weight: 600;
   text-decoration: none;
@@ -222,4 +275,37 @@ nav .navPart2 ul li a button:hover {
 }
 nav .navPart2 ul li a svg {
   font-size: 18px;
+}
+
+nav .navPart2 ul li {
+  position: relative;
+  padding-bottom: 20px;
+}
+nav .navPart2 ul li .submenu {
+  position: absolute;
+  top: 150%;
+  left: 0px;
+  min-width: 200px;
+  background: #f3f4f7;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: 100;
+}
+
+nav .navPart2 ul li .submenu a {
+  display: block;
+  width: 100%;
+}
+nav .navPart2 ul li .submenu a button {
+  width: 100%;
+  justify-content: flex-start !important;
+  border-radius: 0px !important;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+nav .navPart2 ul li:hover .submenu {
+  opacity: 1;
+  visibility: inherit;
+  top: 100%;
 }
