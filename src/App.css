@@ -10,6 +10,16 @@ body {
   font-size: 14px;
 }
 
+.curosr {
+  cursor: pointer;
+}
+.text-light {
+  color: #8b8b8b !important;
+}
+.text-sml {
+  font-size: 12px;
+}
+
 .bg-purple {
   background: #8b3797;
 }
@@ -183,8 +193,6 @@ header .part3 .circle svg {
   padding: 15px 20px !important;
 }
 
-
-
 nav .navPart1 .catWrapper {
   position: relative;
 }
@@ -202,16 +210,15 @@ nav .navPart1 .catWrapper .sidebarNav {
   visibility: hidden;
   z-index: 100;
 }
-nav .navPart1 .catWrapper .sidebarNav.open{
-height: auto;
-opacity: 1;
-visibility: inherit;
+nav .navPart1 .catWrapper .sidebarNav.open {
+  height: auto;
+  opacity: 1;
+  visibility: inherit;
 }
 
 nav .navPart1 .catWrapper .sidebarNav ul li {
   width: 100%;
   list-style: none;
-
 }
 nav .navPart1 .catWrapper .sidebarNav ul li button {
   color: #050303;
@@ -221,11 +228,14 @@ nav .navPart1 .catWrapper .sidebarNav ul li button {
 
 nav .navPart1 .catWrapper .sidebarNav ul li button:hover {
   background: transparent !important;
-}  
-nav .navPart1 .catWrapper .sidebarNav ul li{position: relative;}
-nav .navPart1 .catWrapper .sidebarNav ul li .submenu{position: absolute; top: 0px;}
-
-
+}
+nav .navPart1 .catWrapper .sidebarNav ul li {
+  position: relative;
+}
+nav .navPart1 .catWrapper .sidebarNav ul li .submenu {
+  position: absolute;
+  top: 0px;
+}
 
 nav .allCatTab {
   background: #8b3797;
@@ -309,3 +319,97 @@ nav .navPart2 ul li:hover .submenu {
   visibility: inherit;
   top: 100%;
 }
+
+.homeProduct {
+  padding: 25px 0px;
+  width: 100%;
+}
+
+.homeProduct .banner {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.productRow .hd {
+  font-size: 30px;
+  font-weight: 600;
+}
+.viewAllBtn {
+  padding: 8px 15px !important;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.087) !important;
+  border-radius: 30px !important;
+  color: #000 !important;
+  font-weight: 600;
+}
+.badge-primary {
+  background: #2bbef9 !important;
+}
+
+.productItem {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+}
+.productItem .badge {
+  display: inline-block;
+  padding: 7px 10px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 100;
+}
+.productItem .info {
+  padding: 15px;
+}
+.productItem .info h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.productItem .info .oldPrice {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: line-through;
+}
+.productItem .info .newPrice {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.productItem .actions {
+  position: absolute;
+  top: 15px;
+  right: -100%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.productItem .actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px !important;
+  height: 40px !important;
+  width: 40px !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  background: #ffffff;
+}
+.productItem .actions button svg{
+  color: #000 !important;
+  opacity: 0.7;
+  font-size: 20px;
+
+}
+.productItem .actions button:hover{background: #233a95 !important; color: #fff !important;}
+.productItem .actions button:hover svg{color: #fff !important;}
+
+.productItem .imgWrapper{overflow: hidden;}
+.productItem .imgWrapper img{transition: all 0.3s ease-in-out;}
+.productItem .imgWrapper:hover .actions{opacity: 1; right: 10px;}
+.productItem .imgWrapper:hover img{transform: scale(1.2);}
